@@ -1,5 +1,3 @@
-@import "color.variable";
-
 @mixin get-material-color($color, $shade: '500') {
 	$color: map-get(map-get($material-colors, $color), $shade);
 	@if $color {
