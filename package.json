@@ -1,0 +1,19 @@
+{
+  "name": "scss-mixins",
+  "version": "0.0.1",
+  "description": "Best SCSS mixins to supercharge your workflow",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shreeshkatyayan/scss-mixins.git"
+  },
+  "author": "Shreesh Katyayan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shreeshkatyayan/scss-mixins/issues"
+  },
+  "homepage": "https://github.com/shreeshkatyayan/scss-mixins#readme"
+}
