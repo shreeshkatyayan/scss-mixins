@@ -1,0 +1,18 @@
+$breakpoints: (
+	'mobile': (
+		"max-device-width": 599px
+	),
+	'tab': (
+		"min-device-width": 600px,
+		"max-device-width": 959px
+	),
+	'desktop': (
+		"min-device-width": 960px
+	),
+	'tab-up': (
+		"min-device-width": 600px
+	),
+	'tab-down': (
+		"max-device-width": 959px
+	)
+) !default;
