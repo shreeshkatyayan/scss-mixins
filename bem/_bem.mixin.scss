@@ -1,0 +1,40 @@
+/*	Allows us to write css in BEM style
+ * 	@see http://www.sassmeister.com/gist/6dac17c87fcf2d1555c4
+ */
+
+@import 'bem.variable';
+@import 'bem.function';
+
+@mixin block($block) {
+    .#{$block} {
+        @content;
+    }
+}
+
+@mixin el($element) {
+    $selector: &;
+    @if containsModifier($selector) {
+        $block: getBlock($selector);
+        @at-root {
+            #{$selector} {
+                #{$block+$elementSeparator+$element} {
+                    @content;
+                }
+            }
+        }
+    } @else {
+        @at-root {
+            #{$selector+$elementSeparator+$element} {
+                @content;
+            }
+        }
+    }
+}
+
+@mixin mod($modifier) {
+    @at-root {
+        #{&}#{$modifierSeparator+$modifier} {
+            @content;
+        }
+    }
+}
