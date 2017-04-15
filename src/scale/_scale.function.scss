@@ -1,0 +1,39 @@
+@import 'scale.variable';
+
+@function set-scale($scale) {
+	@if $scale != $base-scale {
+		$base-scale = $scale;
+	}
+}
+
+@function get-scale() {
+	@return $base-scale;
+}
+
+@function get-base-size() {
+	@return $base-size;
+}
+
+@function scaled-size(
+	$increment: 1,
+	$value: get-base-size(),
+	$ratio: get-scale()
+) {
+	$return-value: $value;
+	@if $increment == 0 {
+		@return $return-value;
+	}
+	@if $increment > 0 {
+		@for $i from 1 through $increment {
+			$value: $return-value * $ratio;
+			$return-value: $value;
+		}
+	}
+	@if $increment < 0 {
+		@for $i from $increment through -1 {
+			$value: $return-value / $ratio;
+			$return-value: $value;
+		}
+	}
+	@return $return-value;
+}
