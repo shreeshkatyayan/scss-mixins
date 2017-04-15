@@ -1,6 +1,6 @@
 {
   "name": "scss-mixins",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Best SCSS mixins to supercharge your workflow, with no development dependencies. No redundant prefixing mixins, let autoprefixer take care of that.",
   "main": "src/mixins.scss",
   "scripts": {
