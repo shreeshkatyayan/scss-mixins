@@ -2,7 +2,7 @@
 
 @function set-scale($scale) {
 	@if $scale != $base-scale {
-		$base-scale = $scale;
+		$base-scale: $scale;
 	}
 }
 
