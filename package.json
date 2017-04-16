@@ -1,8 +1,11 @@
 {
   "name": "scss-mixins",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Best SCSS mixins to supercharge your workflow, with no development dependencies. No redundant prefixing mixins, let autoprefixer take care of that.",
-  "main": "src/mixins.scss",
+  "main": [
+	"src/mixins.scss",
+	"src/gulpfile.js"
+  ],
   "scripts": {
     "test": "gulp test",
 	"build": "gulp build-sass",

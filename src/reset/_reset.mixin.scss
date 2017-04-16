@@ -1,0 +1,46 @@
+@import "../color/color.mixin";
+@import "../scale/scale.mixin";
+
+$body-font-size: $base-size;
+$body-font-weight: normal;
+$body-font-color: get-material-color('grey', 800);
+$body-line-height: $base-scale;
+
+@mixin reset-box-model() {
+	html {
+		box-sizing: border-box;
+		@at-root *, *:before, *:after {
+			box-sizing: inherit;
+		}
+	}
+}
+
+@mixin reset-aliasing {
+	body {
+		-webkit-font-smoothing: antialiased;
+		@at-root *, *:before, *:after {
+			-webkit-font-smoothing: inherit;
+		}
+	}
+}
+
+@mixin reset-symantics {
+	body {
+		color: $body-font-color;
+		font-size: $body-font-size;
+		font-weight: $body-font-weight;
+		line-height: $body-line-height;
+
+		margin: 0;
+
+		@at-root *, *:before, *:after {
+			color: inherit;
+			font-size: inherit;
+			font-weight: inherit;
+			line-height: inherit;
+
+			margin: 0;
+			padding: 0;
+		}
+	}
+}
