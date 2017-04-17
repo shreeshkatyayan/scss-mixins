@@ -1,19 +1,13 @@
 {
   "name": "scss-mixins",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Best SCSS mixins to supercharge your workflow, with no development dependencies. No redundant prefixing mixins, let autoprefixer take care of that.",
-  "main": "src/mixins.scss",
-  "scripts": {
-    "test": "gulp test",
-	"build": "gulp build-sass",
-	"watch": "gulp watch-sass"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/shreeshkatyayan/scss-mixins.git"
   },
   "author": "Shreesh Katyayan",
-  "license": "ISC",
+  "license": "UNLICENSE",
   "keywords": [
 	"scss",
 	"mixins",
@@ -24,13 +18,5 @@
   "bugs": {
     "url": "https://github.com/shreeshkatyayan/scss-mixins/issues"
   },
-  "homepage": "https://github.com/shreeshkatyayan/scss-mixins#readme",
-  "dependencies": {
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^3.1.1",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^3.1.0",
-    "gulp-size": "^2.1.0",
-    "gulp-util": "^3.0.8"
-  }
+  "homepage": "https://github.com/shreeshkatyayan/scss-mixins#readme"
 }

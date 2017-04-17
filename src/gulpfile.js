@@ -14,7 +14,7 @@ tasks.test = function() {
 }
 
 tasks.build = function() {
-	return gulp.src("./test/app.scss")
+	return gulp.src("./src/app.scss")
 		.pipe(sass({outputStyle: 'compressed'}).on('error', gutil.log))
 		.pipe(autoprefixer())
 		.pipe(rename('app.min.css'))
